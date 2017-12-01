@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Selector Exercises</title>
+    <style media="screen">
+      /*
+      Translate the instructions in the comments into CSS declarations.
+        element {
+          property: value;
+        }
+        There is the proper syntax.
+      */
+
+      /* 1. Give the body a background color of #222 and default color of #aaa */
+      body {
+        background: #222;
+        color: #aaa;
+      }
+      /* 2. Make h1's and h2's a hex code color of your choice (#xxxxxx). Change them both in one declaration */
+      h1, h2 {
+        color: pink;
+      }
+      /* 3. Make the background of items in an ordered list gray */
+      ol li {
+        background: grey;
+      }
+      /* 4. Make the background of items in an unordered list pink */
+      ul li {
+        background: pink;
+      }
+
+      /* 5. Make the first list item in an ordered list green */
+      ol li:first-child {
+        color: green;
+      }
+      /* 6. Make the last list item in an ordered list blue */
+      ol li:last-child {
+        color: blue;
+      }
+      /* 7. Make every other list item in an unordered list red */
+
+      ul li:nth-child(odd) {
+        color:red;
+      }
+      /* 8. The background of anything with the class of "highlight" yellow */
+
+      .highlight{
+        background: yellow;
+        font-family: monospace;
+        color:black;
+
+      }
+      /* 9. Make all links purple and give them  */
+a {
+  color: purple;
+}
+a:hover {
+  color:pink;
+}
+
+
+      /* 10. Change the font-family of all paragraphs and all list items in an ordered list to 'fantasy' */
+
+      ol li, p {
+        font-family: fantasy;
+      }
+
+      /* Bonus: Change the line-height to 40px and the letter-spacing to 5px on anything with the id "more-space" */
+
+#more-space {
+  line-height: 40px;
+  letter-spacing: 5px;
+}
+
+    </style>
+  </head>
+  <body>
+    <h1>Headline</h1>
+    <h2>Sub Heading</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex <a class="highlight" href="#">ea commodo consequat</a>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <h2>Sub Heading</h2>
+    <ul>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+    </ul>
+
+    <h2 class="highlight">Sub Heading</h2>
+    <ol>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+    </ol>
+
+    <h2>Sub Heading</h2>
+    <p class="highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex <a href="#">ea commodo consequat</a>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <p id="more-space">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex <a href="#">ea commodo consequat</a>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex <a href="#">ea commodo consequat</a>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  </body>
+</html>
